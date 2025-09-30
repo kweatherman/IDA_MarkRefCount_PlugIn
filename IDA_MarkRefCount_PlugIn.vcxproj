@@ -67,7 +67,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(_IDADIR)\idasdk\include;$(IDASUPPORT)\Utility;$(IDASUPPORT)\IDA_WaitEx\include;$(IDASUPPORT)\IDA_SegmentSelect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(_IDADIR)\idasdk\src\include;$(IDASUPPORT)\Utility;$(IDASUPPORT)\IDA_WaitEx\include;$(IDASUPPORT)\IDA_SegmentSelect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__EA64__;__X64__;NDEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -86,7 +86,7 @@
     <Link>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(_IDADIR)\idasdk\lib\x64_win_vc_64;$(_IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx\lib;$(IDASUPPORT)\IDA_SegmentSelect\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(_IDADIR)\idasdk\src\lib\x64_win_vc_64;$(_IDADIR)\idasdk\src\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx\lib;$(IDASUPPORT)\IDA_SegmentSelect\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -119,7 +119,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(_IDADIR)\idasdk\include;$(IDASUPPORT)\Utility;$(IDASUPPORT)\IDA_WaitEx\include;$(IDASUPPORT)\IDA_SegmentSelect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(_IDADIR)\idasdk\src\include;$(IDASUPPORT)\Utility;$(IDASUPPORT)\IDA_WaitEx\include;$(IDASUPPORT)\IDA_SegmentSelect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__EA64__;__X64__;_DEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -139,7 +139,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(_IDADIR)\idasdk\lib\x64_win_vc_64;$(_IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx\lib;$(IDASUPPORT)\IDA_SegmentSelect\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(_IDADIR)\idasdk\src\lib\x64_win_vc_64;$(_IDADIR)\idasdk\src\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx\lib;$(IDASUPPORT)\IDA_SegmentSelect\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
